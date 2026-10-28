@@ -7,15 +7,20 @@
     <style>
         body { font-family: sans-serif; text-align: center; padding: 50px; background: #f0f0f0; }
         .btn-ar { display: inline-block; padding: 20px 40px; background: #007aff; color: white; font-weight: bold; font-size: 20px; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 15px rgba(0,122,255,0.3); }
+        .btn-ar img { display: block; margin: 0 auto 10px auto; width: 40px; height: 40px; opacity: 0.8; }
     </style>
 </head>
 <body>
     <h2>Visualizador de Inyectora Escala Real 1:1</h2>
     <p>Presiona el botón de abajo para ver la máquina en tu espacio real.</p>
     
-    <!-- Este botón activa el visor forzando el bloqueo de escala al 100% -->
+    <!-- El enlace nativo ahora contiene una imagen como hijo directo para obligar a Apple a bloquear el tamaño -->
     <a rel="ar" href="Apple.usdz#allowsContentScaling=0">
-        <span class="btn-ar">Ver en Realidad Aumentada</span>
+        <div class="btn-ar">
+            <!-- Icono AR genérico en formato SVG para cumplir el requisito de Apple -->
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 24 24' fill='white'><path d='M12 2l10 5v10l-10 5-10-5v-10z'/></svg>" alt="AR">
+            Ver en Realidad Aumentada
+        </div>
     </a>
 </body>
 </html>
