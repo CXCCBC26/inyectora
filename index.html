@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inyectora 3D Realidad Aumentada</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; background: #ffffff; }
+        .contenedor { max-width: 400px; margin: 0 auto; background: #f9f9f9; padding: 30px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        h2 { color: #333; margin-bottom: 10px; }
+        p { color: #666; margin-bottom: 30px; font-size: 15px; }
+        
+        /* Estilos del botón oficial de Apple */
+        .boton-ar {
+            display: inline-block;
+            background-color: #007aff;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h2>Inyectora 3D</h2>
+        <p>Escala Real 1:1</p>
+        
+        <!-- Enlace con la estructura exacta que pide Apple para el visor Quick Look -->
+        <a rel="ar" id="enlaceAR" href="Apple.usdz#allowsContentScaling=0">
+            <span class="boton-ar">Ver en tu espacio</span>
+        </a>
+    </div>
+
+</body>
+</html>
